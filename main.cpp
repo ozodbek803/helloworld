@@ -1,58 +1,126 @@
 #include <iostream>
-#include <iomanip>
 using namespace std;
-// int main() {
-//     string name ;
-//     int age;
-//
-//     cout << "Enter your name: ";
-//     cin >> name;
-//     cout << "Your name is  " << name << endl;
-//
-//     cout << "Enter your age: ";
-//     cin >> age;
-//     cout << "Hello "  << name << " You are "  << age <<  " old" <<endl;
-    //return 0;
-//}
 
 /*int main() {
-    cout << "Table of numbers" << endl;
-    for (int i = 1 ; i <= 5 ; i++) {cout << i<<" " ;}
-        return 0;
+    int a,b,c,d,e;
+    cin>>a>>b>>c>>d>>e;
+    int sum=a+b+c+d+e;
+    cout<<"sum is:"<<sum<<endl;
+}*/
+//PROBLEM 2
+/*int main() {
+    cout << "Enter a student ID:";
+    int id;
+    cin >> id;
+    cout << "Enter a the gpa:";
+    float gpa;
+    cin >> gpa;
+    cout << "Enter a student's year of study:";
+    int year;
+    cin >> year;
+    cout << "Enter a student fee:";
+    int fee;
+    cin >> fee;
+    cout <<"student ID: " << id << endl<<"gpa: "<<id<<endl<<"Year of study: "<<year<<endl<<"Student fee = "<<fee<<endl<<endl;
+}*/
+//problem 3
+/*int main() {
+    float celsius_temp , fahrenheit_temp;
+    cout << "Enter temperature in Fahrenheit: ";
+    cin >> fahrenheit_temp;
+    fahrenheit_temp = celsius_temp* 9/5 + 32;
+    cout<<"The temperature in Celsius is:"<< celsius_temp<<endl;
+    cout<< "The temperature in Fahrenheit:"<< fahrenheit_temp<<endl;
+}*/
+ //problem 4
+/*int main() {
+    double costPerItem;
+    int quantity;
+    double totalPrice;
+    cout << "Enter the cost per item: ";
+    cin >> costPerItem;
+    cout << "Enter the quantity of items: ";
+    cin >> quantity;
+    totalPrice = costPerItem * quantity;
+    cout << "Total price: " << totalPrice << endl;
+    return 0;
 
-    }*/
-    /*int main() {
-        int a,b;
+}*/
+//problem 5
+/*int main() {
+    int age1, age2, age3, age4;
+    double average;
+    cout << "Enter your age1: ";
+    cin >> age1;
+    cout << "Enter your age2: ";
+    cin >> age2;
+    cout << "Enter your age3: ";
+    cin >> age3;
+    cout << "Enter your age4: ";
+    cin >> age4;
+    average = (age1 + age2 + age3 + age4)/4;
+    cout << "The average age of family is :" << average << endl;
+    return 0;
+}*/
 
-        cout <<"Enter two numbers :"<<endl;
-        cin>>a>>b;
-        int swap = a;
-        a=b ;
-        b = swap ;
-        cout<<"After swapping :"<<endl;
-        cout<<"a = "<<a<<endl<<"b = "<<b<<endl;
-        return 0;
+ //problem 6
+/*int main() {
+    int length,width,perimetr, area;
+    cout << "Enter the length of the rectangle: ";
+    cin >> length;
+    cout << "Enter the width of the rectangle: ";
+    cin >> width;
+    area = length * width;
+    perimetr = 2 * length + 2 * width;
+    cout << "Area of the rectangle: " << area << endl;
+    cout << "Perimetr of the rectangle: " << perimetr << endl;
+    return 0;*/
 
 
-    }*/
-    // PROBLEM 4
-    /*int main() {
-        int n;
-        cout << "Enter the number :" ;
-        cin >> n;
-        for (int i = 1; i <= n; i++) {
-            std:: cout << setw(5)<<i<<setw(5)<< i*i<<endl;
-        }
+int main() {
+    //problem 7
+    /*int dividend, divisor,quotient,remainder;
+    cout << "Enter dividend: ";
+    cin >> dividend;
+    cout << "Enter divisor: ";
+    cin >> divisor;
+    quotient = dividend / divisor;
+    remainder = dividend % divisor;
+    cout<<"Quotient: "<<quotient<<endl;
+    cout<<"Remainder: "<<remainder;*/
+
+    //problem 8
+    /*double usdAmount, exchangeRate, uzsAmount;
+    cout<<"Enter amount of usd: ";
+    cin>>usdAmount;
+    cout<<"Enter amount of exchange: ";
+    cin>>exchangeRate;
+    uzsAmount = usdAmount * exchangeRate;
+    cout<<"The equivalent amount in UZS: "<< uzsAmount<<endl;*/
+
+    //problem 9
+    /*double radius, area;
+    float pi=3.14159;
+    cout << "Enter the radius of the circle: ";
+    cin >> radius;
+    area = pi * radius * radius;
+    cout << "The area of the circle is " << area << endl; */
+
+    //problem 10
+    doule radius, height, volume;
+    float pi = 3.14159;
+    cout<<"Enter radius: ";
+    cin>>radius;
+    cout<<"Enter height: ";
+    cin>>height;
+    volume = pi*radius*radius*height;
+    cout<<"Volume of circle = "<<volume<<endl;
 
 
-    }*/
-     int main() {
-         string a;
-         cout <<"Enter the text:";
-         cin >> a;
-         getline(cin, a );
-         int padding = (50-a.length())/2;
-         cout << setw(padding + a.length()) <<a;
-         return 0;
-     }
 
+
+
+
+
+    return 0;
+}
