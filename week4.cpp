@@ -1,4 +1,5 @@
 #include  <iostream>
+#include <cmath>
 using namespace std;
 int main() {
     // problem 1
@@ -151,7 +152,7 @@ int main() {
     }*/
 
     //problem 12
-    int angle1,angle2, angle3;
+    /*int angle1,angle2, angle3;
     cout << "Enter the angles of triangles in degrees: ";
     cin >> angle1 >> angle2 >> angle3;
     if (angle1+angle2+angle3 ==180) {
@@ -159,29 +160,83 @@ int main() {
     }
     else {
         cout <<"This triangle is not valid";
-    }
+    }*/
+
+    //problem 13
+        /*char ch;
+        cout << "Enter a character: ";
+        cin >> ch;
+        if (ch >= 'A' && ch <= 'Z') {
+            cout << "The entered character is an uppercase letter." << endl;
+        }
+        else if (ch >= 'a' && ch <= 'z') {
+            cout << "The entered character is a lowercase letter." << endl;
+        }
+        else {
+            cout << "The entered character is not an alphabet." << endl;
+        }*/
+
+    //problem 14
+        /*double weight1, price1, weight2, price2;
+        cout << "Enter weight and price for package 1: ";
+        cin >> weight1 >> price1;
+        cout << "Enter weight and price for package 2: ";
+        cin >> weight2 >> price2;
+        double cost1 = price1 / weight1;
+        double cost2 = price2 / weight2;
+        if (cost1 < cost2) {
+            cout << "Package 1 has a better price" << endl;
+        } else if (cost1 > cost2) {
+            cout << "Package 2 has a better price" << endl;
+        } else {
+            cout << "Two packages have the same price." << endl;
+        }*/
+    //problem 15
+
+        /*int number;
+        cout << "Enter a three-digit integer: ";
+        cin >> number;
+        int firstDigit = number / 100;
+        int lastDigit = number % 10;
+        if (firstDigit == lastDigit) {
+            cout << number << " is a palindrome" << endl;
+        } else {
+            cout << number << " is not a palindrome" << endl;
+        }*/
+    //problem 16
+        double x, y;
+        cout << "Enter a point (x, y): ";
+        cin >> x >> y;
+        double distance = sqrt(x * x + y * y);
+        if (distance <= 10) {
+            cout << "Point (" << x << ", " << y << ") is inside the circle." << endl;
+        } else {
+            cout << "Point (" << x << ", " << y << ") is outside the circle." << endl;
+        }
 
     //problem 17
-    double GPA;
+    /*double GPA;
+
     cout << "Enter the GPA: ";
     cin >> GPA;
     if (GPA<=4.5 && GPA>=4.0) {
         cout << "You got 80% scholarship";
     }
-    else if ({
+    else if (GPA<=4.0 && GPA>=3.5) {
+      cout << "You got 60% scholarship";
+    }
+    else if (GPA<3.5 && GPA>=3.0) {
+      cout<< "You got 50% scholarship";
+    }
+    else if (GPA<3.0 && GPA>=0.0) {
+      cout << "No scholarship";
 
     }
+    else {
+        cout<<"Invalid input";
+    }*/
 
 
 
-
-
-
-
-
-
-
-
-
-    return 0;
-}
+        return 0;
+    }
