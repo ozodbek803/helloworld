@@ -1,4 +1,6 @@
 #include <iostream>
+#include <limits.h>
+#include <cmath>
 using namespace std;
 int main(){
   // problem 1.1
@@ -114,16 +116,183 @@ int main(){
      //     cout<<"Factorial of a negative number is not defined";
      // }
 
-    //problem 5
-    int classes,credits,total;
-    cout<<"Enter number of classes:";
-    cin>>classes;
-    for (int i=0;i<classes;i++) {
-        cout<<"Enter number of credits:";
-        cin>>credits;
-        for (int j=0;j<credits
-        }
+   // task
+    // while(true) {
+    //     int num1,num2;
+    //     cout<<" Enter two numbers: ";
+    //     cin>>num1>>num2;
+    //     int choice;
+    //     cout<<"Enter your choice: ";
+    //     cin>>choice;
+    //     switch(choice){
+    //         case 1 :
+    //             cout<<"Result: "<<num1+num2<<endl;
+    //         break;
+    //
+    //         case 2:
+    //             cout<<"Result: "<<num1-num2<<endl;
+    //         break;
+    //         case 3:
+    //             cout<<"Result: "<<num1*num2<<endl;
+    //         break;
+    //         case 4:
+    //             if (num2==0) {
+    //                 cout<<"num2 should not be zero";
+    //             }
+    //             else {
+    //                 cout<<"Result: "<<num1/num2<<endl;
+    //             }
+    //         break;
+    //         default:
+    //             cout<<"You stupid???"<<endl;
+    //         break;
+    //     }
+    // }
+
+    //problem 6
+      // int numClasses;
+      // double totalWeightedMarks = 0;
+      // double totalCredits = 0;
+      // cout << "Enter the number of classes: ";
+      // cin >> numClasses;
+      // for (int i = 1; i <= numClasses; i++) {
+      //     int credits;
+      //     double marks;
+      //
+      //     cout << "Enter credits for subject " << i << ": ";
+      //     cin >> credits;
+      //     cout << "Enter total marks obtained in subject " << i << ": ";
+      //     cin >> marks;
+      //     totalWeightedMarks += credits * marks;
+      //     totalCredits += credits;
+      // }
+      //
+      // double GPA = totalWeightedMarks / totalCredits;
+      // cout << "The GPA of the student is: " << GPA << endl;
+
+
+  //problem 7
+  // int rows;
+  // cout<<"Enter number of rows: ";
+  // cin>>rows;
+    // for(int i=0;i<rows;i++) {
+    //     for(int j=0;j<rows;j++) {
+    //         cout<<" *";
+    //     }
+    //     cout<<endl;
+    // }
+
+    //problem 8
+    // int rows;
+    // cout<<"Enter number of rows : ";
+    // cin>>rows;
+    // for (int i=1; i<=rows; i++) {
+    //     for (int j=1; j<=i; j++) {
+    //         cout<<"  *";
+    //     }
+    //     cout<<endl;
+    //
+    // }
+
+    //problem 9
+    // int n;
+    // bool is_prime=true;
+    // cout<<"Enter the number : ";
+    // cin>>n;
+    // if (n==0 || n==1) {
+    //     is_prime=false;
+    // }
+    // for (int i=2; i<=sqrt(n); i++) {
+    //     if (n%i==0) {
+    //         is_prime=false;
+    //         break;
+    //     }
+    // }
+    // if (is_prime)
+    //     cout<<n<<" is prime"<<endl;
+    // else  cout<<n<<" is not prime"<<endl;
+
+    //problem 10
+    // int n;
+    // cout<<"Enter the number :";
+    // cin>>n;
+    // for (int i = 1; i <= n; i++) {
+    //     cout<<i<<"*"<<i<<"="<<i*i<<endl;
+    // }
+
+    //problem 11
+    // int numbers,total_sum=0,positive_numbers=0,negative_numbers=0,total_number=0;
+    // for (int i = 0; i < INT_MAX; i++) {
+    //     cout << "Enter an integer (0 to end): ";
+    //     cin >> numbers;
+    //
+    //
+    //     if (numbers== 0) {
+    //         break;
+    //     }
+    //
+    //     if (numbers>0) {
+    //         positive_numbers++;
+    //     }
+    //     else if (numbers < 0) {
+    //         negative_numbers++;
+    //     }
+    //     total_sum+=numbers;
+    //     total_number++;
+    // }
+    //  if (total_number>0) {
+    //     double average = (double)total_sum/total_number;
+    //     cout<<"Average: "<<average<<endl;
+    //     cout<<"Total: "<<total_number<<endl;
+    //     cout<<"positive numbers: "<<positive_numbers<<endl;
+    //     cout<<"negative numbers: "<<negative_numbers<<endl;
+    // }
+
+  //problem 12
+  // int n,reversed_number=0,remainder;
+  // cout<<"Enter a number: ";
+  // cin>>n;
+  // while(n != 0) {
+  //   remainder = n % 10;
+  //   reversed_number = reversed_number * 10 + remainder;
+  //   n /= 10;
+  // }
+  // cout<<reversed_number;
+  //
+
+  //problem 13
+  // int n;
+  // cout<<"Enter the numbers: ";
+  // cin>>n;
+  // if (n>0) {
+  //   for(int i=1;i<=n;i++) {
+  //     for(int j=1;j<=i;j++) {
+  //       cout<<i;
+  //     }
+  //     cout<<endl;
+  //   }
+  // }
+  // else if(n==0) {
+  //   cout<<"The depth is zero";
+  // }
+  // else {
+  //   cout<<"Invalid Input";
+  // }
+
+  //problem 14
+    string binary;
+    cout << "Enter a binary number: ";
+    cin >> binary;
+
+    int decimal = 0;
+    int length = binary.length();
+
+    for (int i = 0; i < length; i++) {
+      if (binary[i] == '1') {
+        decimal += pow(2, length - 1 - i);
+      }
     }
+    cout << "The decimal equivalent is: " << decimal << endl;
 
 
 
