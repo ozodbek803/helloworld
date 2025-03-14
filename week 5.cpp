@@ -2,6 +2,13 @@
 #include <limits.h>
 #include <cmath>
 using namespace std;
+int factorial(int n) {
+  if (n==0 || n==1) {
+    return 1;
+
+  }
+  return n*factorial(n-1);
+}
 int main(){
   // problem 1.1
   // for (int i = 1; i <= 10; i++){
@@ -280,22 +287,7 @@ int main(){
   // }
 
   //problem 14
-    string binary;
-    cout << "Enter a binary number: ";
-    cin >> binary;
-
-    int decimal = 0;
-    int length = binary.length();
-
-    for (int i = 0; i < length; i++) {
-      if (binary[i] == '1') {
-        decimal += pow(2, length - 1 - i);
-      }
-    }
-    cout << "The decimal equivalent is: " << decimal << endl;
-
-
-
+  cout<<factorial(16)<<endl;
 
 
 

@@ -77,7 +77,7 @@ using namespace std;
     return 0;*/
 
 
-int main() {
+//int main() {
     //problem 7
     /*int dividend, divisor,quotient,remainder;
     cout << "Enter dividend: ";
@@ -107,14 +107,16 @@ int main() {
     cout << "The area of the circle is " << area << endl; */
 
     //problem 10
-    doule radius, height, volume;
-    float pi = 3.14159;
-    cout<<"Enter radius: ";
-    cin>>radius;
-    cout<<"Enter height: ";
-    cin>>height;
-    volume = pi*radius*radius*height;
-    cout<<"Volume of circle = "<<volume<<endl;
+//    doule radius, height, volume;
+//    float pi = 3.14159;
+//    cout<<"Enter radius: ";
+//    cin>>radius;
+//    cout<<"Enter height: ";
+//    cin>>height;
+//    volume = pi*radius*radius*height;
+//    cout<<"Volume of circle = "<<volume<<endl;
+//
+//
 
 
 
@@ -122,5 +124,65 @@ int main() {
 
 
 
-    return 0;
+
+
+
+    // problem 1
+int main() {
+    //     int age;
+    //     string name;
+    //     cout <<"Enter your name:";
+    //     cin >> name;
+    //     cout<<"Enter your age:";
+    //     cin >>age;
+    //
+    //     cout<<"Your name is: "<<name<<endl;
+    //     cout<<"Your age is: "<<age<<endl;
+    // int number;
+    // for (int i = 1; i <= 5; i++) {
+    //     cout<<i<<endl;
+    // }
+    //problem 3
+    // int a,b;
+    // cout<<"Enter two numbers:";
+    // cin>>a>>b;
+    // cout<<b<<" "<<a;
+
+    //problem 4
+    // int n;
+    // cout<<"Enter a number: ";
+    // cin>>n;
+    // for (int i=1; i<=n; i++) {
+    //     cout<<i<<"^2 = "<<i*i<<endl;
+    // }
+    //
+    // }
+    // string text;
+    // cout << "Please enter a string:";
+    // getline(cin,text);
+    // int space= (50-text.length())/2;
+    // cout << text << endl;
+    // for (int i = 0; i < space; i++) {
+    //     cout << " ";
+    // }
+    // cout<<text<<endl;
+
+
+
+
+
+
+
+
+
+
+
+
 }
+
+
+
+
+
+
+

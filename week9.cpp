@@ -116,5 +116,94 @@ using namespace std;
 // }
 
 //problem 9
+// int reverse(int num,int rev){
+//   if (num==0) return 0;
+//   return reverse(num/10,rev*10+num%10);
+// }
+// int main(){
+//   int number,a;
+//   cout<<"Enter a number: ";
+//   cin>>number;
+//   int reversedNumber=reverse(number,a);
+//   cout<<"The reversed number is: "<<reversedNumber<<endl;
+// }
+//
+//problem 10
 
+// int calculateDivisor(int num) {
+//     int divisor = 1;
+//     while (num >= 10) {
+//         divisor *= 10;
+//         num /= 10;
+//     }
+//     return divisor;
+// }
+// bool isPalindrome(int num, int divisor) {
+//     if (num < 10) return true;
+//     int firstDigit = num / divisor;
+//     int lastDigit = num % 10;
+//     if (firstDigit != lastDigit) return false;
+//     num = (num % divisor) / 10;
+//     divisor /= 100;
+//     return isPalindrome(num, divisor);
+// }
+//
+// int main() {
+//     int num;
+//     cout << "Enter a number: ";
+//     cin >> num;
+//
+//     if (num < 0) num = -num;
+//
+//     int divisor = calculateDivisor(num);
+//
+//     if (isPalindrome(num, divisor))
+//         cout << "The number is a palindrome." << endl;
+//     else
+//         cout << "The number is not a palindrome." << endl;
+//
+//     return 0;
+// }
+//
+//problem 11
+// bool isPrimeRecursive(int n, int divisor = 2) {
+//     if (n <= 1) {
+//         return false;
+//     }
+//     if (divisor * divisor > n) {
+//         return true;
+//     }
+//     if (n % divisor == 0) {
+//         return false;
+//     }
+//     return isPrimeRecursive(n, divisor + 1);
+// }
+// int main() {
+//     int num = 29;
+//     if (isPrimeRecursive(num)) {
+//         cout << num << " is prime." << endl;
+//     } else {
+//         cout << num << " is not prime." << endl;
+//     }
+//
+//     return 0;
+// }
+//
+//problem 12
+void towerOfHanoi(int n, char source, char destination, char auxiliary) {
+    if (n == 1) {
+        cout << "Move disk 1 from " << source << " to " << destination << endl;
+        return;
+    }
+    towerOfHanoi(n - 1, source, auxiliary, destination);
+    cout << "Move disk " << n << " from " << source << " to " << destination << endl;
+    towerOfHanoi(n - 1, auxiliary, destination, source);
+}
+int main() {
+    int n;
+    cout << "Enter the number of disks: ";
+    cin >> n;
+    towerOfHanoi(n, 'A', 'C', 'B');
 
+    return 0;
+}
