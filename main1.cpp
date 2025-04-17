@@ -47,7 +47,7 @@ using namespace std;
 
 
     }*/
-int main() {
+//int main() {
     //         string a;
     //         cout <<"Enter the text:";
     //         cin >> a;
@@ -305,26 +305,307 @@ int main() {
     // }
     // cout<<"The sum is:"<<sum<<endl;
     //
-    int num,fact=1;
-    cout << "Enter a number: ";
-    cin >> num;
-    if (num<0) {
-        cout << "Invalid Input";
-        return 0;
+    // int num,fact=1;
+    // cout << "Enter a number: ";
+    // cin >> num;
+    // if (num<0) {
+    //     cout << "Invalid Input";
+    //     return 0;
+    // }
+    //
+    // while (num>1) {
+    //         fact=fact*num;
+    //         num--;
+    //
+    // }
+    //     cout << fact << endl;
+    //
+    //lab 9
+//     int multiply(int a, int b) {
+//         if (b<0)
+//             return a+multiply(a, -b);
+//         if(b==0)
+//             return 0;
+//         else(b>0);
+//         return a+multiply(a, b-1);
+//
+// }
+// int main() {
+//         int num1, num2;
+//         cout<<"Enter two numbers: ";
+//         cin>>num1>>num2;
+//         int product=multiply(num1,num2);
+//         cout<<"The product is: "<<product;
+//     }
+//problem 2
+// int factorial(int n) {
+//     if (n==0)
+//         return 1;
+//     else
+//     return n*factorial(n-1);
+// }
+// int main() {
+//     int number;
+//     cout << "Enter a number: ";
+//     cin >> number;
+//
+//
+//     if (number<0)
+//         cout<<"The factorial of the negative number is not defined";
+//     else
+//         cout << "Factorial of the given number is: " << factorial(number) << endl;
+// }
+//problem 3
+// int fibonacci(int n) {
+//     if (n==0)
+//         return 0;
+//     if (n==1)
+//         return 1;
+//     return fibonacci(n-1) + fibonacci(n-2);
+// }
+// int main() {
+//     int number;
+//     cout << "Enter a number: ";
+//     cin >> number;
+//     cout << fibonacci(number) << endl;
+//
+// }
+
+//problem 4
+// int sum(int n) {
+//     if (n == 0)
+//         return 0;
+//     else
+//         return n+sum(n-1);
+// }
+//
+//     int main() {
+//     int number;
+//     cout << "Enter a number: ";
+//     cin >> number;
+//     cout<<sum(number);
+//
+//problem 5
+// void reverse(int n) {
+//     if(n==0)
+//         return;
+//     cout<<n<<" ";
+//     reverse(n-1);
+//
+// }
+//     int main() {
+//     int number;
+//     cout<<"Enter a number: ";
+//     cin>>number;
+//     reverse(number);
+//
+//
+//     }
+
+//problem 6
+// int count(int n) {
+//     if (n==0)
+//         return 0;
+//     return 1+count(n/10);
+// }
+// int main() {
+//     int number;
+//     cout << "Enter a number: ";
+//     cin >> number;
+//     if (number<0)
+//         cout<<"invalid input";
+//     else
+//         cout << count(number);
+// }
+
+//problem 7
+// int sumofdigits(int n) {
+//     if(n==0) return 0;
+//     int qoldiq=n%10;
+//     return qoldiq+sumofdigits(n/10);
+// }
+// int main() {
+//     int number;
+//     cout<<"Enter a number: ";
+//     cin>>number;
+//     if (number>0)
+//     cout<<"The sum of the digits is: "<<sumofdigits(number);
+//     else
+//         cout<<"The sum of the digits is :"<<sumofdigits(-number);
+// }
+
+//problem 8
+// double power(int base, int exp) {
+//     if (exp == 0) return 1;
+//     return base * power(base, exp - 1);
+// }
+// int main() {
+//     double base1, exp1;
+//     cout << "Enter base number: ";
+//     cin >> base1;
+//     cout << "Enter exponent: ";
+//     cin >> exp1;
+//     if (exp1<0) {
+//         exp1 = -exp1;
+//         cout<<base1<<"^"<<"("<<-exp1<<")"<<"="<<1.0/power(base1,exp1)<<endl;
+//     }
+//     else
+//         cout << base1 << "^" << exp1 << " = " << power(base1, exp1);
+//
+// }
+
+// int reverse(int n,int rev=0) {
+//     if (n == 0)
+//         return rev;
+//
+//     return reverse(n/10, rev*10+n% 10);
+// }
+// int main() {
+//     int number;
+//     cout<<"Enter a number: ";
+//     cin>>number;
+//     cout<<reverse(number)<<endl;
+// }
+
+// bool isPolindrome(int n) {
+//     if (n<0) return false;
+//     return n==reverse(n);
+// }
+//
+// int main() {
+//     int number;
+//     cout << "Enter a number: ";
+//     cin >> number;
+//     if (isPolindrome(number)) {
+//         cout<<"True"<<endl;
+//     }
+//     else {
+//         cout<<"False"<<endl;
+//     }
+// }
+
+// int prime(int n, int i=2) {
+//     if (n<=1) return false;
+//     if (i*i>n) return true;
+//     if (n%i==0) return false;
+//     return prime(n, i+1);
+// }
+// int main() {
+//     int number;
+//     cout<<"Enter a number: ";
+//     cin>>number;
+//     if (prime(number)) {
+//         cout<<number<<" is a prime number";
+//     }
+//     else
+//         cout<<number<<" is not a prime number";
+//
+//
+//     }
+// int main() {
+    // int numbers[3]={10,20,30};
+    // for (int i=0;i<3;i++)
+    // cout<<numbers[i];
+    //
+    // int n;
+    // cout<<"Enter the number of the integers:";
+    // cin>>n;
+    //
+    // if (n<0 || n>10000) {
+    //     cout<<"Invalid Input"<<endl;
+    //     return 1;
+    // }
+    // cout<<"Enter "<<n<<" integers:";
+    // int numbers[10000];
+    // int sum=0;
+    // for (int i = 0; i < n; ++i) {
+    //     cin>>numbers[i];
+    //     sum+=numbers[i];
+    // }
+ //   cout<<"The sum of the integers is: "<<sum;
+
+    // int n;
+    // cout<<"Enter number of elements: ";
+    // cin>>n;
+    //
+    // if (n<0) {
+    //     cout<<"Invalid Input"<<endl;
+    // }
+    // double numbers[n];
+    // double average = 0,sum=0;
+    // cout<<"Enter "<<n<<" numbers: ";
+    // for(int i=0;i<n;i++) {
+    //     cin>>numbers[i];
+    //     sum+=numbers[i];
+    //     average=sum/n;
+    // }
+    // cout<<"Average: "<<average<<endl;
+    //
+
+
+// int minimum(int arr[],int size) {
+//     int min=arr[0];
+//     for (int i=1;i<size;++i) {
+//         if (arr[i]>min) {
+//             min=arr[i];
+//         }
+//     }
+//     return min;
+// }
+// int main() {
+//     int n;
+//     cout<<"Enter number of elements: ";
+//     cin>>n;
+//     int numbers[1000];
+//     if (n<0) {
+//         cout<<"Invalid Input"<<endl;
+//         return 1;
+//     }
+//     cout<<"Enter "<<n<<" elements: ";
+//     for (int i=0;i<n;++i) {
+//         cin>>numbers[i];
+//
+//     }
+//     int minValue=minimum(numbers,n);
+//     cout<<"Minimum value is: "<<minValue<<endl;
+//     return 0;
+//
+// }
+int maxofIndex(double array[],int size) {
+    if (size<=0) return -1;
+    int maxIndex = 0;
+    for (int i=1;i<size;i++) {
+        if (array[i]>array[maxIndex]) {
+            maxIndex = i;
+        }
     }
-
-    while (num>1) {
-            fact=fact*num;
-            num--;
-
-    }
-        cout << fact << endl;
-
-
-
-
-
+    return maxIndex;
 }
+
+int main() {
+    const int size=15;
+    double numbers[size];
+    for (int i=0;i<size;i++) {
+        cout << "Enter number " << i+1 << ": ";
+        cin>>numbers[i];
+    }
+    int Largestindex=maxofIndex(numbers,size);
+    if (Largestindex==-1) {
+        cout<<"No such number"<<endl;
+    }
+    else {
+        cout<<"The largest index is "<<Largestindex<<endl;
+    }
+}
+
+
+
+
+
+
+
+
+
 
 
 
